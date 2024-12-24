@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Product market",
+      "tasks": "2",
+      "status": "active",
+      "date": "1735040795"
+    },
+    {
+      "id": "2",
+      "name": "Landing page",
+      "tasks": "3",
+      "status": "active",
+      "date": "1728557195"
+    },
+    {
+      "id": "2",
+      "name": "Wordpress - blog site",
+      "tasks": "3",
+      "status": "done",
+      "date": "1731843995"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "project-id": "1",
+      "name": "example",
+      "executor": "John",
+      "status": "todo",
+      "date": "example"
+    },
+    {
+      "id": "2",
+      "project-id": "3",
+      "name": "example",
+      "executor": "Olga",
+      "status": "todo",
+      "date": "example"
+    },
+    {
+      "id": "3",
+      "project-id": "2",
+      "name": "example",
+      "executor": "Viktor",
+      "status": "done",
+      "date": "example"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+@use '@/assets/styles/abstracts/mixins' as m;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+  // scroll-padding-top: 20rem;
+}
+
+body {
+  // font-family: 'InterTight', sans-serif;
+  box-sizing: border-box;
+  background: #ededed;
+  color: vars.$color-black;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.container {
+  max-width: vars.$container;
+  width: 100%;
+  padding: 0 vars.$container-horizontal-offset;
+  margin: 0 auto;
+
+  @include m.respond(sm) {
+    padding: 0 2rem;
+  }
+}
